@@ -12,52 +12,53 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "CircleCI todoly"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ViewController.didTapAddItemButton(_:)))
         
-        // Setup a notification to let us know when the app is about to close,
-        // and that we should store the user items to persistence. This will call the
-        // applicationDidEnterBackground() function in this class
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
-            name: NSNotification.Name.UIApplicationDidEnterBackground,
-            object: nil)
-        
-        do
-        {
-            // Try to load from persistence
-            self.todoItems = try [ToDoItem].readFromPersistence()
-        }
-        catch let error as NSError
-        {
-            if error.domain == NSCocoaErrorDomain && error.code == NSFileReadNoSuchFileError
-            {
-                NSLog("No persistence file found, not necesserially an error...")
-            }
-            else
-            {
-                let alert = UIAlertController(
-                    title: "Error",
-                    message: "Could not load the to-do items!",
-                    preferredStyle: .alert)
-                
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alert, animated: true, completion: nil)
-                
-                NSLog("Error loading from persistence: \(error)")
-            }
-        }
+//        // Setup a notification to let us know when the app is about to close,
+//        // and that we should store the user items to persistence. This will call the
+//        // applicationDidEnterBackground() function in this class
+//        NotificationCenter.default.addObserver(
+//            self,
+//            selector: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
+//            name: NSNotification.Name.UIApplicationDidEnterBackground,
+//            object: nil)
+//
+//        do
+//        {
+//            // Try to load from persistence
+//            self.todoItems = try [ToDoItem].readFromPersistence()
+//        }
+//        catch let error as NSError
+//        {
+//            if error.domain == NSCocoaErrorDomain && error.code == NSFileReadNoSuchFileError
+//            {
+//                NSLog("No persistence file found, not necesserially an error...")
+//            }
+//            else
+//            {
+//                let alert = UIAlertController(
+//                    title: "Error",
+//                    message: "Could not load the to-do items!",
+//                    preferredStyle: .alert)
+//
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//
+//                self.present(alert, animated: true, completion: nil)
+//
+//                NSLog("Error loading from persistence: \(error)")
+//            }
+//        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
-    private var todoItems = ToDoItem.getMockData()
+    private var todoItems = ToDoItem.initializeList()
     
     override func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -120,7 +121,7 @@ class ViewController: UITableViewController {
         
         // Add a text field to the alert for the new item's title
         alert.addTextField(configurationHandler: nil)
-        
+
         // Add a "cancel" button to the alert
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
@@ -148,18 +149,18 @@ class ViewController: UITableViewController {
         tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
     }
     
-    @objc
-    public func applicationDidEnterBackground(_ notification: NSNotification)
-    {
-        do
-        {
-            try todoItems.writeToPersistence()
-        }
-        catch let error
-        {
-            NSLog("Error writing to persistence: \(error)")
-        }
-    }
+//    @objc
+//    public func applicationDidEnterBackground(_ notification: NSNotification)
+//    {
+//        do
+//        {
+//            try todoItems.writeToPersistence()
+//        }
+//        catch let error
+//        {
+//            NSLog("Error writing to persistence: \(error)")
+//        }
+//    }
 }
 
 

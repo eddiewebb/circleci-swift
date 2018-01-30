@@ -15,6 +15,7 @@
 		720849A1201944A200AFFAF6 /* todolyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720849A0201944A200AFFAF6 /* todolyTests.swift */; };
 		720849AC201944A200AFFAF6 /* todolyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720849AB201944A200AFFAF6 /* todolyUITests.swift */; };
 		720849BA201BDAD500AFFAF6 /* MyToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720849B9201BDAD500AFFAF6 /* MyToDo.swift */; };
+		7279667120205210001CCD94 /* todolyUITestsasdfasfsd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7279667020205210001CCD94 /* todolyUITestsasdfasfsd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,13 @@
 			remoteInfo = todoly;
 		};
 		720849A8201944A200AFFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72084980201944A200AFFAF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72084987201944A200AFFAF6;
+			remoteInfo = todoly;
+		};
+		7279667320205210001CCD94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 72084980201944A200AFFAF6 /* Project object */;
 			proxyType = 1;
@@ -49,6 +57,9 @@
 		720849AB201944A200AFFAF6 /* todolyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolyUITests.swift; sourceTree = "<group>"; };
 		720849AD201944A200AFFAF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		720849B9201BDAD500AFFAF6 /* MyToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDo.swift; sourceTree = "<group>"; };
+		7279666E20205210001CCD94 /* todolyUITestsasdfasfsd.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todolyUITestsasdfasfsd.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7279667020205210001CCD94 /* todolyUITestsasdfasfsd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolyUITestsasdfasfsd.swift; sourceTree = "<group>"; };
+		7279667220205210001CCD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7279666B20205210001CCD94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +100,7 @@
 				7208498A201944A200AFFAF6 /* todoly */,
 				7208499F201944A200AFFAF6 /* todolyTests */,
 				720849AA201944A200AFFAF6 /* todolyUITests */,
+				7279666F20205210001CCD94 /* todolyUITestsasdfasfsd */,
 				72084989201944A200AFFAF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +111,7 @@
 				72084988201944A200AFFAF6 /* todoly.app */,
 				7208499C201944A200AFFAF6 /* todolyTests.xctest */,
 				720849A7201944A200AFFAF6 /* todolyUITests.xctest */,
+				7279666E20205210001CCD94 /* todolyUITestsasdfasfsd.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +146,15 @@
 				720849AD201944A200AFFAF6 /* Info.plist */,
 			);
 			path = todolyUITests;
+			sourceTree = "<group>";
+		};
+		7279666F20205210001CCD94 /* todolyUITestsasdfasfsd */ = {
+			isa = PBXGroup;
+			children = (
+				7279667020205210001CCD94 /* todolyUITestsasdfasfsd.swift */,
+				7279667220205210001CCD94 /* Info.plist */,
+			);
+			path = todolyUITestsasdfasfsd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +213,24 @@
 			productReference = 720849A7201944A200AFFAF6 /* todolyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7279666D20205210001CCD94 /* todolyUITestsasdfasfsd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7279667720205210001CCD94 /* Build configuration list for PBXNativeTarget "todolyUITestsasdfasfsd" */;
+			buildPhases = (
+				7279666A20205210001CCD94 /* Sources */,
+				7279666B20205210001CCD94 /* Frameworks */,
+				7279666C20205210001CCD94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7279667420205210001CCD94 /* PBXTargetDependency */,
+			);
+			name = todolyUITestsasdfasfsd;
+			productName = todolyUITestsasdfasfsd;
+			productReference = 7279666E20205210001CCD94 /* todolyUITestsasdfasfsd.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +255,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 72084987201944A200AFFAF6;
 					};
+					7279666D20205210001CCD94 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72084987201944A200AFFAF6;
+					};
 				};
 			};
 			buildConfigurationList = 72084983201944A200AFFAF6 /* Build configuration list for PBXProject "todoly" */;
@@ -226,6 +278,7 @@
 				72084987201944A200AFFAF6 /* todoly */,
 				7208499B201944A200AFFAF6 /* todolyTests */,
 				720849A6201944A200AFFAF6 /* todolyUITests */,
+				7279666D20205210001CCD94 /* todolyUITestsasdfasfsd */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +302,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		720849A5201944A200AFFAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7279666C20205210001CCD94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +344,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7279666A20205210001CCD94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7279667120205210001CCD94 /* todolyUITestsasdfasfsd.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +364,11 @@
 			isa = PBXTargetDependency;
 			target = 72084987201944A200AFFAF6 /* todoly */;
 			targetProxy = 720849A8201944A200AFFAF6 /* PBXContainerItemProxy */;
+		};
+		7279667420205210001CCD94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72084987201944A200AFFAF6 /* todoly */;
+			targetProxy = 7279667320205210001CCD94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todoly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todoly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -526,6 +601,36 @@
 			};
 			name = Release;
 		};
+		7279667520205210001CCD94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP8MGZQ72J;
+				INFOPLIST_FILE = todolyUITestsasdfasfsd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyUITestsasdfasfsd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = todoly;
+			};
+			name = Debug;
+		};
+		7279667620205210001CCD94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP8MGZQ72J;
+				INFOPLIST_FILE = todolyUITestsasdfasfsd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyUITestsasdfasfsd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = todoly;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,6 +666,15 @@
 			buildConfigurations = (
 				720849B7201944A200AFFAF6 /* Debug */,
 				720849B8201944A200AFFAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7279667720205210001CCD94 /* Build configuration list for PBXNativeTarget "todolyUITestsasdfasfsd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7279667520205210001CCD94 /* Debug */,
+				7279667620205210001CCD94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
