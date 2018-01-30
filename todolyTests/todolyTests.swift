@@ -10,10 +10,13 @@ import XCTest
 @testable import todoly
 
 class todolyTests: XCTestCase {
-    
+
+    var viewController: ViewController!
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
     }
     
     override func tearDown() {
@@ -21,16 +24,17 @@ class todolyTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    // add items to list successfully
+    func testAdd()
+    {
+        var toDoItemList = ToDoItem.initializeList()
+        
+        toDoItemList.append(ToDoItem(title: "Chocolate"))
+        XCTAssert(toDoItemList.count == 1)
+        toDoItemList.append(ToDoItem(title: "Milk"))
+        XCTAssert(toDoItemList.count == 2)
+        toDoItemList.append(ToDoItem(title: "Dog food"))
+        XCTAssert(toDoItemList.count == 3)
     }
     
 }
