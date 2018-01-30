@@ -6,6 +6,7 @@ jobs:
 
     steps:
       - checkout
+      - run: bundle install
       - run: bundle exec fastlane tests
 
       - store_test_results:
