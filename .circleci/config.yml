@@ -15,7 +15,7 @@ jobs:
       # - run: bundle exec fastlane tests
       - run:
           name: Build and run tests
-          command: bundle exec fastlane scan --destination "platform=iOS Simulator,name=iPhone 6"
+          command: bundle exec fastlane scan --sdk iphonesimulator --destination "platform=iOS Simulator,name=iPhone 6,OS=11.2"
           environment:
             SCAN_DEVICE: iPhone 6
             LC_ALL: en_US.UTF-8

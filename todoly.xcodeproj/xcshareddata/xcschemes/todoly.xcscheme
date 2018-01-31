@@ -53,7 +53,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7279666D20205210001CCD94"
+               BlueprintIdentifier = "72E4ABB0202121E600BD3771"
                BuildableName = "todolyUITestsasdfasfsd.xctest"
                BlueprintName = "todolyUITestsasdfasfsd"
                ReferencedContainer = "container:todoly.xcodeproj">

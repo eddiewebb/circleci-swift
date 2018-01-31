@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='todolyUITestsasdfasfsd.xctest' tests='4' failures='0'>
   <testsuite name='todolyTests.todolyTests' tests='1' failures='0'>
-    <testcase classname='todolyTests.todolyTests' name='testAdd' time='0.002'/>
+    <testcase classname='todolyTests.todolyTests' name='testAdd' time='0.007'/>
   </testsuite>
   <testsuite name='todolyUITests.todolyUITests' tests='2' failures='0'>
-    <testcase classname='todolyUITests.todolyUITests' name='testAdd' time='10.156'/>
-    <testcase classname='todolyUITests.todolyUITests' name='testRemove' time='11.790'/>
+    <testcase classname='todolyUITests.todolyUITests' name='testAdd' time='11.552'/>
+    <testcase classname='todolyUITests.todolyUITests' name='testRemove' time='13.549'/>
   </testsuite>
   <testsuite name='todolyUITestsasdfasfsd.todolyUITestsasdfasfsd' tests='1' failures='0'>
-    <testcase classname='todolyUITestsasdfasfsd.todolyUITestsasdfasfsd' name='testExample' time='4.526'/>
+    <testcase classname='todolyUITestsasdfasfsd.todolyUITestsasdfasfsd' name='testExample' time='5.998'/>
   </testsuite>
 </testsuites>
