@@ -20,7 +20,7 @@ jobs:
             SCAN_DEVICE: iPhone 6
             LC_ALL: en_US.UTF-8
             LANG: en_US.UTF-8
-            # SCAN_SCHEME: WebTests
+            SCAN_SCHEME: todoly
 
       - store_test_results:
           path: test_output/report.xml
