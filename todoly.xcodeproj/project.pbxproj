@@ -562,6 +562,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todoly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todoly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,6 +582,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todoly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todoly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,6 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -631,6 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -647,6 +652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cci.todolyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUISnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todolyUISnapshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -676,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUISnapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todolyUISnapshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -690,6 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUITestsasdfasfsd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todolyUITestsasdfasfsd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -705,6 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP8MGZQ72J;
 				INFOPLIST_FILE = todolyUITestsasdfasfsd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyggeholding.todolyUITestsasdfasfsd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
